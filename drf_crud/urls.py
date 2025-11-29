@@ -19,6 +19,7 @@ from drf_crud_python3 import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', views.welcome),
+    url(r'^createStudent/', views.create_student),
     url(r'^student/', views.get_student_detail),
+    url(r'^', views.welcome),
 ]
